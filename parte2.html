@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Responsivo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .caja {
+            background: lightseagreen;
+            padding: 5%;
+            font-size: 2vw;
+            /* escala según el ancho de la ventana */
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja">Este es un diseño responsivo</div>
+    <div class="caja">Lorem, ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="caja">Harum architecto alias assumenda ea minus, esse officiis, officia dolores aspernatur quae possimus. Magni, alias? Nostrum suscipit quia debitis inventore consequuntur officiis!</div>
+</body>
+
+</html>
